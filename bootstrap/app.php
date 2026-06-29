@@ -14,12 +14,13 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
+        $middleware->trustProxies(at: '*');
+
         $middleware->alias([
             'role' => RoleMiddleware::class,
             'Alert' => RealRashid\SweetAlert\Facades\Alert::class,
             'guest' => GuestMiddleware::class,
             'auth' => AuthMiddleware::class,
-
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
