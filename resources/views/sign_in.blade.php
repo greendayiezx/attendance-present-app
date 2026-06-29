@@ -101,16 +101,23 @@
                                 </div> --}}
                             </div>
                         </div>
-                        <div
-                            class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
-                            <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden"
-                                style="background-image: url('{{ asset('assets/img/logos/logo.png') }}');
-          background-size: cover;">
-                                <span class="mask bg-gradient-primary opacity-6"></span>
-                                <h4 class="mt-5 text-white font-weight-bolder position-relative">"Attention is the new
-                                    currency"</h4>
-                                <p class="text-white position-relative">The more effortless the writing looks, the more
-                                    effort the writer actually put into the process.</p>
+                        <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
+                            <div class="position-relative h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center align-items-center overflow-hidden"
+                                style="background: linear-gradient(135deg, #b31217 0%, #e52d27 100%); box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);">
+                                
+                                <!-- Decorative background circles for modern look -->
+                                <div class="position-absolute" style="width: 300px; height: 300px; background: rgba(255,255,255,0.1); border-radius: 50%; top: -50px; right: -50px; blur(10px);"></div>
+                                <div class="position-absolute" style="width: 200px; height: 200px; background: rgba(255,255,255,0.05); border-radius: 50%; bottom: 10%; left: -20px;"></div>
+
+                                <div class="position-relative z-index-1 d-flex flex-column align-items-center w-100">
+                                    <div class="bg-white p-4 rounded-circle mb-5" style="box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                                        <img src="{{ asset('assets/img/logos/logo.png') }}" alt="Telkom University Logo" style="width: 180px; height: auto; object-fit: contain;">
+                                    </div>
+                                    <h3 class="mt-4 text-white font-weight-bolder position-relative" style="letter-spacing: 0.5px;">Telkom University</h3>
+                                    <p class="text-white position-relative px-4 mt-2" style="font-size: 1.05rem; font-weight: 300; opacity: 0.9;">
+                                        Sistem Presensi Terintegrasi untuk menunjang kedisiplinan dan kemudahan administrasi.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
