@@ -1,9 +1,9 @@
 [variables]
 NIXPACKS_PHP_VERSION = "8.2"
-NIXPACKS_PHP_EXTENSIONS = "pdo,pdo_mysql,mbstring,xml,curl,zip,bcmath,gd,tokenizer,dom,fileinfo,intl,openssl"
 
 [phases.install]
 cmds = [
+    "curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer",
     "composer install --no-dev --optimize-autoloader --no-interaction",
     "npm ci",
     "npm run build"
