@@ -14,6 +14,8 @@ nixPkgs = [
     "php82Extensions.fileinfo",
     "php82Extensions.intl",
     "php82Extensions.openssl",
+    "php82Extensions.session",
+    "php82Packages.composer",
     "nodejs_20",
     "nodePackages.npm"
 ]
