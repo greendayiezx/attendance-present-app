@@ -1,0 +1,13 @@
+.env
+.env.*
+node_modules/
+vendor/
+.git/
+.gitignore
+storage/logs/
+public/build/
+.phpunit.cache
+.phpunit.result.cache
+npm-debug.log
+yarn-error.log
+*.md
